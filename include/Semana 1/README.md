@@ -1,4 +1,4 @@
-# Lógica de Programação
+# Lógica de Programação: Mergulhe em Programação com JavaScript
 
 Este projeto faz parte do curso de Lógica de Programação da Alura. O objetivo é aprender os conceitos fundamentais de programação através de exercícios práticos e desafios.
 
