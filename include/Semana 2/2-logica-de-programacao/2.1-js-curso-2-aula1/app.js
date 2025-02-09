@@ -5,9 +5,23 @@
 // paragrafo.innerHTML = "Escolha um número entre 1 e 10";
 
 let tentativas = 1;
+let listaDeNumerosSorteados = [];
+let numeroLimite = 10;
 
 function gerarNumeroAleatorio() {
-  return Math.floor(Math.random() * 10 + 1);
+  let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+  let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
+
+  if (quantidadeDeElementosNaLista == 4) {
+    listaDeNumerosSorteados = [];
+  }
+  if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
+    return gerarNumeroAleatorio();
+  } else {
+    listaDeNumerosSorteados.push(numeroEscolhido);
+    console.log(listaDeNumerosSorteados);
+    return numeroEscolhido;
+  }
 }
 
 let numeroSecreto = gerarNumeroAleatorio();
