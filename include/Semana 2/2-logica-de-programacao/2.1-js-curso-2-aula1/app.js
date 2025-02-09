@@ -46,6 +46,7 @@ function reiniciarJogo() {
 function exibirTextoNaTela(tag, texto) {
   let paragrafo = document.querySelector(tag);
   paragrafo.innerHTML = texto;
+  responsiveVoice.speak(texto, "Brazilian Portuguese Male", { rate: 1.2 });
 }
 
 exibirTextoNaTela("h1", "Jogo do Número Secreto");
