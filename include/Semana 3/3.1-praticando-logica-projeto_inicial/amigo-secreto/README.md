@@ -59,4 +59,116 @@
    }
    let listaSemDuplicatas = removerDuplicatas(novaLista);
    console.log(listaSemDuplicatas);
+   
    ```
+## Mais Desafios
+
+1. **Validação de Número**  
+   ```javascript
+   function validarNumero(numero) {
+     if (numero > 0) return 'positivo';
+     if (numero < 0) return 'negativo';
+     return 'zero';
+   }
+   ```
+
+2. **Verificação de Maioridade**  
+   ```javascript
+   function verificarMaioridade(idade) {
+     if (idade >= 18) {
+       return "É maior de idade";
+     } else {
+       return "É menor de idade";
+     }
+   }
+   ```
+
+3. **Validação de String Vazia**  
+   ```javascript
+   function validarStringVazia(str) {
+     const isEmpty = str.length === 0;
+     console.log(`String vazia: ${isEmpty}`);
+     return isEmpty;
+   }
+   ```
+
+4. **Determinação de Ano Bissexto**  
+   ```javascript
+   function anoBissexto(ano) {
+     const isBissexto = (ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0;
+     const mensagem = isBissexto ? "Ano bissexto" : "Ano não é bissexto";
+     console.log(mensagem);
+     return mensagem;
+   }
+   ```
+
+5. **Cálculo de Média**  
+   ```javascript
+   function calcularMedia(num1, num2) {
+     if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+       console.log('Número inválido');
+       return 'Número inválido';
+     }
+     const media = (num1 + num2) / 2;
+     console.log(`Média: ${media}`);
+     return media;
+   }
+   ```
+
+6. **Tamanho de Array**  
+   ```javascript
+   function tamanhoArray(array) {
+     const tamanho = array.length;
+     console.log(`Tamanho do array: ${tamanho}`);
+     return tamanho;
+   }
+   ```
+
+7. **Verificação de Elemento em Array**  
+   ```javascript
+   let array = [1, 2, 3, 4, 5];
+   const contemElemento = array.includes(3);
+   console.log(`Contém o elemento 3: ${contemElemento}`); // true
+   ```
+
+8. **Presença de Elemento em Array**  
+   ```javascript
+   function elementoPresente(array, elemento) {
+     const presente = array.includes(elemento);
+     console.log(`Elemento presente: ${presente}`);
+     return presente;
+   }
+   ```
+
+9. **Verificação de String em Array de Strings**  
+   ```javascript
+   let arrayStrings = ['apple', 'banana', 'cherry'];
+   const contemString = arrayStrings.includes('banana');
+   console.log(`Contém a string 'banana': ${contemString}`); // true
+   ```
+
+10. **Presença de Objeto em Array de Objetos**  
+    ```javascript
+    function objetoPresente(array, objeto) {
+      const presente = array.some(item => JSON.stringify(item) === JSON.stringify(objeto));
+      console.log(`Objeto presente: ${presente}`);
+      return presente;
+    }
+    ```
+
+11. **Soma e Produto de Elementos de Array**  
+    ```javascript
+    function somaEProduto(array) {
+      let somaPares = 0;
+      let produtoImpares = 1;
+      array.forEach(num => {
+        if (num % 2 === 0) {
+          somaPares += num;
+        } else {
+          produtoImpares *= num;
+        }
+      });
+      console.log(`Soma dos pares: ${somaPares}, Produto dos ímpares: ${produtoImpares}`);
+      return { somaPares, produtoImpares };
+    }
+    ```
