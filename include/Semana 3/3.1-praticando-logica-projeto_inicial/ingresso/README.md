@@ -4,12 +4,12 @@
 
 ```javascript
 function verificarQuantidade() {
-    const quantidade = document.getElementById("qtd").value;
-    if (quantidade <= 0) {
-        alert("Por favor, insira um número positivo.");
-    } else {
-        // Código para prosseguir com a compra
-    }
+  const quantidade = document.getElementById("qtd").value;
+  if (quantidade <= 0) {
+    alert("Por favor, insira um número positivo.");
+  } else {
+    // Código para prosseguir com a compra
+  }
 }
 
 verificarQuantidade();
@@ -19,7 +19,7 @@ verificarQuantidade();
 
 ```javascript
 function converterParaInteiro(str) {
-    return parseInt(str, 10);
+  return parseInt(str, 10);
 }
 
 console.log(converterParaInteiro("123"));
@@ -29,37 +29,37 @@ console.log(converterParaInteiro("123"));
 
 ```javascript
 function adicionar(a, b) {
-    return a + b;
+  return a + b;
 }
 
 function subtrair(a, b) {
-    return a - b;
+  return a - b;
 }
 
 function multiplicar(a, b) {
-    return a * b;
+  return a * b;
 }
 
 function dividir(a, b) {
-    if (b === 0) {
-        return "Erro: Divisão por zero";
-    }
-    return a / b;
+  if (b === 0) {
+    return "Erro: Divisão por zero";
+  }
+  return a / b;
 }
 
 function calculadora(a, b, operacao) {
-    switch (operacao) {
-        case "adicao":
-            return adicionar(a, b);
-        case "subtracao":
-            return subtrair(a, b);
-        case "multiplicacao":
-            return multiplicar(a, b);
-        case "divisao":
-            return dividir(a, b);
-        default:
-            return "Operação inválida";
-    }
+  switch (operacao) {
+    case "adicao":
+      return adicionar(a, b);
+    case "subtracao":
+      return subtrair(a, b);
+    case "multiplicacao":
+      return multiplicar(a, b);
+    case "divisao":
+      return dividir(a, b);
+    default:
+      return "Operação inválida";
+  }
 }
 
 console.log(calculadora(10, 5, "adicao"));
@@ -69,11 +69,11 @@ console.log(calculadora(10, 5, "adicao"));
 
 ```javascript
 function verificarParidade(numero) {
-    if (numero % 2 === 0) {
-        return "Par";
-    } else {
-        return "Ímpar";
-    }
+  if (numero % 2 === 0) {
+    return "Par";
+  } else {
+    return "Ímpar";
+  }
 }
 
 console.log(verificarParidade(4));
@@ -83,15 +83,14 @@ console.log(verificarParidade(4));
 
 ```javascript
 function converterTemperatura(temperatura, escala) {
-    if (escala === "Celsius") {
-        return (temperatura * 9) / 5 + 32 + "°F"; // Celsius para Fahrenheit
-    } else if (escala === "Fahrenheit") {
-        return ((temperatura - 32) * 5) / 9 + "°C"; // Fahrenheit para Celsius
-    } else {
-        return "Escala inválida";
-    }
+  if (escala === "Celsius") {
+    return (temperatura * 9) / 5 + 32 + "°F"; // Celsius para Fahrenheit
+  } else if (escala === "Fahrenheit") {
+    return ((temperatura - 32) * 5) / 9 + "°C"; // Fahrenheit para Celsius
+  } else {
+    return "Escala inválida";
+  }
 }
 
 console.log(converterTemperatura(0, "Fahrenheit"));
 ```
-
